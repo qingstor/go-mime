@@ -1,0 +1,7 @@
+package mime
+
+var extensionToMIME = map[string]string{
+{{- range $k, $v := . }}
+    "{{ $k }}": "{{ $v }}",
+{{- end }}
+}
